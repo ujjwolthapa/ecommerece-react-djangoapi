@@ -1,0 +1,10 @@
+version: '3'
+services:
+  frontend:
+    build: .
+    image: bromx/frontend:latest
+    container_name: frontend
+    command: npx serve build
+    ports:
+      - "3000:3000"
+    
